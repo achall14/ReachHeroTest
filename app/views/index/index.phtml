@@ -1,0 +1,28 @@
+
+<h1>Contact list</h1>
+
+<h2>Here are your contacts !</h2>
+
+<div class="contacts">
+	<ul id="contactlist">
+<?php
+    foreach (Contact::find() as $contact) {
+		
+?>		
+        
+			 <div class='contact'>
+				<li> 
+					<?php echo $contact->firstname, " ", $contact->lastname ?>
+					<span id='showinfo'>
+						<?php echo $this->tag->linkTo("index/show/$contact->id","SHOW INFO") ?> 
+					</span>
+				</li>
+
+						
+			 </div> 
+			 
+    <?php  } ?>
+
+
+
+</div>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<style>
+		
+		
+		#header {
+		    padding: 10px;
+		    z-index: 100000;
+		}
+
+		#header  ul {
+		    list-style-type: none;
+		    color: #fff;
+		    margin: 0;
+		}
+
+		#header  ul li {
+		    display: inline;
+		    padding: 4px 8px;
+		    padding-top: 8px !important;
+		    margin: 0 0.5em;
+		    color: #fff;
+		    text-transform: uppercase;
+		}
+		
+		#header ul {
+		    padding: 6px;
+		}
+
+		html {
+		    font-family: 'Alternate-Regular', sans-serif;
+		    font-size: 20px;
+			background-color: #fff2e6;
+		}
+
+		.contacts{
+			padding: 10px 50px 10px;
+			list-style-position:inside;
+			text-transform: capitalize;
+			text-align:center;
+			
+		}
+		
+		#contactlist{
+			margin: 50px;
+			align:center;
+		}
+		
+		#showinfo{
+			font-size: 10px;
+		}
+		
+		h1 {
+			padding: 4px 8px;
+			margin: 10px;
+			text-indent: 50px;
+			text-transform: uppercase;
+			font-weight: normal;
+			text-align: center;
+		}
+		
+		h2 {
+			padding: 4px 8px;
+			margin: 10px;
+			text-indent: 50px;
+			font-weight: normal;
+			text-align:center;
+			
+		}
+		
+		form {
+			text-align :center;
+		}
+		
+		#email{
+			text-transform: lowercase;
+		}
+		
+		
+		
+		
+		
+		
+		</style>
+			
+		
+		<title>ReachHero - Contact list</title>
+	</head>
+	
+	
+	<div id=header>					
+		<ul id="menu">
+	   	 <li><?php echo $this->tag->linkTo("","Home");?></li>
+	     <li><?php echo $this->tag->linkTo("add","Add a contact");?></li>
+	   	 <li><?php echo $this->tag->linkTo("index/contactme","Contact me");?></li>
+	    </ul>
+			 
+	</div>
+
+	
+	<body>
+		<?php echo $this->getContent(); ?>
+	</body>
+</html>
